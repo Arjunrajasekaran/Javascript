@@ -1,0 +1,19 @@
+<html>
+<form name="myForm">
+    <label for="firstname">Age: </label>
+    <input name="num" type="text" id="username" size="1">
+    <input type="submit" value="Login" onclick="return validateForm()">
+	<p id="filename"> </p>
+<script>
+function validateForm()
+{
+ 
+var str = document.getElementById("filename").value;
+var reg = new RegExp("[^a-zA-Z0-9]");
+if (reg.test(str)){
+alert("Only letters and number are allowed);
+}else{
+alert("string contains only letters and numbers:)");}
+}
+</script>
+</html>

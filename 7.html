@@ -1,0 +1,27 @@
+<html>
+<body>
+
+<h2>JavaScript Comparisons</h2>
+
+enter your weight <input id ="weight" value ="100" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var weight, physique;
+    weight = Number(document.getElementById("weight").value);
+
+    if (isNaN(weight)) {
+        phsique = " not valid";
+    } else {
+       phyique = (weight > 100) ? "obese" : "fit";
+    }
+    document.getElementById("demo").innerHTML = physique;
+}
+</script>
+
+</body>
+</html>
